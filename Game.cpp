@@ -1,9 +1,10 @@
 class Game{
-	State currentState;
+	State curState;
+	GameModel curModel;
 
 	int main(){
 		while(true){
-			render(currentState);
+			curState.render(curModel);
 		}
 	}	
 }
